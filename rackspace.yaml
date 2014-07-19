@@ -1,0 +1,37 @@
+schema-version: 1.0.0
+application-family: Application Frameworks
+application-name: Jabbr
+flavor: Single Windows Server running Jabbr
+flavor-weight: 3
+reach-info:
+  icon-20x20: https://600861890ddb34a8670a-744765205721eed93c384dae790e86aa.ssl.cf2.rackcdn.com/jabbr-icon-20x20.png
+  tattoo: https://600861890ddb34a8670a-744765205721eed93c384dae790e86aa.ssl.cf2.rackcdn.com/jabbr-tattoo.png
+abstract: | A Single Windows server running [JabbR](http://about.jabbr.net/).
+  This deployment configures JabbR Collaborative chat software in IIS.
+instructions: |
+  #### Getting Started
+  If you're new to JabbR, once the deployment is ready, you will get Jabbr
+  signin page by browsing the domain name you provided during the
+  installation. The first user account must be created by clicking on the
+  "Register" link.
+
+  #### Additional Licensing
+  Jabbr is open sourve under the [MIT
+  Licence](https://github.com/JabbR/JabbR/blob/master/LICENSE.md)
+
+  #### Logging in via Remote Desktop
+  The Administrator password is included in the passwords/secrets section
+  of this deployment. Use that password and the instructions found
+  [here](http://www.rackspace.com/knowledge_center/article/logging-in-to-your-server-via-rdp-windows)
+  to login and begin managing JabbR.
+
+  #### Uploading Files via FTP
+  The FTP password is included in the passwords/secrets section
+  of this deployment. You may use [Filezilla FTP Client](https://filezilla-project.org/)
+  or [Cyberduck](http://cyberduck.io/) with the FTP credential to upload your application.
+
+  #### Details of Your Setup
+  This setup was built through a [Powershell
+  Script](http://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx).
+  Once the deployment is up, the script will not be run again, so it is
+  safe to change settings and configurations on your server and within JabbR.
