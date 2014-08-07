@@ -1,11 +1,14 @@
 schema-version: 1.0.0
 application-family: Application Frameworks
-application-name: Jabbr
+application-name: JabbR
 flavor: Single Windows server
-flavor-weight: 3
+flavor-weight: 1
 reach-info:
   icon-20x20: https://600861890ddb34a8670a-744765205721eed93c384dae790e86aa.ssl.cf2.rackcdn.com/jabbr-icon-20x20.png
   tattoo: https://600861890ddb34a8670a-744765205721eed93c384dae790e86aa.ssl.cf2.rackcdn.com/jabbr-tattoo.png
+hidden_outputs:
+  - admin_password
+  - site_ftp_password
 abstract: |
   A Single Windows server running [JabbR](http://about.jabbr.net/).
 
