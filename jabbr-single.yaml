@@ -79,7 +79,7 @@ parameters:
     label: Jabbr Version
     description: Version of Jabbr to install.
     type: string
-    default: 7.02.01
+    default: 0.11
 
 resources:
 
