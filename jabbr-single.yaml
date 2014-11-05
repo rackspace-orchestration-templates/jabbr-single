@@ -1,7 +1,7 @@
 heat_template_version: 2013-05-23
 
 description: |
-  HEAT template for setting up DNN site in IIS with a FTP account on a single Windows
+  HEAT template for setting up Jabbr site in IIS with a FTP account on a single Windows
   Server
 
 parameter_groups:
@@ -11,12 +11,12 @@ parameter_groups:
   - image
   - flavor
 
-- label: DNN Application Settings
+- label: Jabbr Application Settings
   parameters:
   - domain
   - ftp_username
   - server_hostname
-  - dnn_version
+  - jabbr_version
 
 
 parameters:
@@ -26,7 +26,7 @@ parameters:
     label: Server Hostname
     description: Hostname to use for the server that's built.
     type: string
-    default: DNN
+    default: Jabbr
     description: Windows Server Name
 
   image:
@@ -56,10 +56,10 @@ parameters:
       - 8 GB General Purpose v1
       description: must be a valid Rackspace Cloud Server flavor.
 
-  # DNN settings
+  # Jabbr settings
   domain:
     label: Site Domain
-    description: Domain to be used with the DNN site
+    description: Domain to be used with the Jabbr site
     type: string
     default: "example.com"
     constraints:
@@ -75,9 +75,9 @@ parameters:
     - allowed_pattern: "^(?!^root$)([a-z0-9_]{1,16})$"
       description: Must be a valid username
 
-  dnn_version:
-    label: DNN Version
-    description: Version of DNN to install.
+  jabbr_version:
+    label: Jabbr Version
+    description: Version of Jabbr to install.
     type: string
     default: 7.02.01
 
