@@ -8,6 +8,7 @@ parameter_groups:
 
 - label: Server Settings
   parameters:
+  - server_hostname
   - image
   - flavor
 
@@ -15,7 +16,6 @@ parameter_groups:
   parameters:
   - domain
   - ftp_username
-  - server_hostname
   - jabbr_version
 
 
@@ -35,9 +35,11 @@ parameters:
       Required: Server image used for all servers that are created as a part of
       this deployment.
     type: string
-    default: Windows Server 2012 + SQL Server 2012 SP1 Web
+    default: Windows Server 2012 R2 + SQL Server 2014 Web
     constraints:
     - allowed_values:
+      - Windows Server 2012 R2 + SQL Server 2014 Standard
+      - Windows Server 2012 R2 + SQL Server 2014 Web
       - Windows Server 2012 + SQL Server 2012 SP1 Standard
       - Windows Server 2012 + SQL Server 2012 SP1 Web
       description: must be a supported OS
