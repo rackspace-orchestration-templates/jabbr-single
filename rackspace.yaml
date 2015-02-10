@@ -40,3 +40,4 @@ instructions: |
   Script](http://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx).
   Once the deployment is up, the script will not be run again, so it is
   safe to change settings and configurations on your server and within JabbR.
+user-input-required: true
