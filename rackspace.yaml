@@ -33,7 +33,8 @@ instructions: |
   #### Uploading Files via FTP
   The FTP password is included in the passwords/secrets section
   of this deployment. You may use [Filezilla FTP Client](https://filezilla-project.org/)
-  or [Cyberduck](http://cyberduck.io/) with the FTP credential to upload your application.
+  or [Cyberduck](http://cyberduck.io/) with the FTP credential to upload your
+  application.
 
   #### Details of Your Setup
   This setup was built through a [Powershell
@@ -41,3 +42,7 @@ instructions: |
   Once the deployment is up, the script will not be run again, so it is
   safe to change settings and configurations on your server and within JabbR.
 user-input-required: true
+description: |
+  A Single Windows server running [JabbR](http://about.jabbr.net/),
+  with a default version of 0.11.  This deployment configures JabbR
+  Collaborative chat software in IIS.
