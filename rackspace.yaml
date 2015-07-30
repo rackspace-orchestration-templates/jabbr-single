@@ -10,9 +10,7 @@ hidden_outputs:
   - admin_password
   - site_ftp_password
 abstract: |
-  A Single Windows server running [JabbR](http://about.jabbr.net/).
-
-  This deployment configures JabbR Collaborative chat software in IIS.
+  JabbR is an open-source chat application based on ASP.NET.
 instructions: |
   #### Getting Started
   If you're new to JabbR, once the deployment is ready, you will get Jabbr
