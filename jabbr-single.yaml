@@ -1,8 +1,9 @@
 heat_template_version: 2013-05-23
 
 description: |
-  HEAT template for setting up Jabbr site in IIS with a FTP account on a single Windows
-  Server
+  A Single Windows server running [JabbR](http://about.jabbr.net/),
+  with a default version of 0.11.  This deployment configures JabbR
+  Collaborative chat software in IIS.
 
 parameter_groups:
 
